@@ -3,7 +3,7 @@
         <div class="hero-head">
             <nav class="navbar">
                 <div class="navbar-start">
-
+                    <a href="class "></a>
                 </div>
             </nav>
         </div>
