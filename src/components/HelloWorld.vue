@@ -21,6 +21,18 @@
       <li><a href="https://news.vuejs.org" target="_blank" rel="noopener">News</a></li>
     </ul>
     <h3>Ecosystem</h3>
+    <button class="button">Button</button> &nbsp;
+    <button class="button is-white">White</button> &nbsp;
+    <button class="button is-light">Light</button> &nbsp;
+    <button class="button is-dark">Dark</button> &nbsp;
+    <button class="button is-black">Black</button> &nbsp;
+    <button class="button is-text">Text</button> &nbsp;
+    <button class="button is-primary">Primary</button> &nbsp;
+    <button class="button is-link">Link</button> &nbsp;
+    <button class="button is-info">Info</button> &nbsp;
+    <button class="button is-success">Success</button> &nbsp;
+    <button class="button is-warning">Warning</button> &nbsp;
+    <button class="button is-danger">Danger</button> &nbsp;
     <ul>
       <li><a href="https://router.vuejs.org" target="_blank" rel="noopener">vue-router</a></li>
       <li><a href="https://vuex.vuejs.org" target="_blank" rel="noopener">vuex</a></li>
