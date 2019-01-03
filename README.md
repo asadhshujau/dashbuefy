@@ -1,5 +1,5 @@
 # Description
-A dashboard created using [Buefy](https://buefy.github.io), [Bulma](https://bulma.io/) and [Vue](https://vuejs.org/).
+A dashboard created using [Buefy](https://buefy.github.io), [Bulma](https://bulma.io/) and [Vue](https://vuejs.org/). Some [Vue Bulma - Vue Admin](https://github.com/vue-bulma/vue-admin) components were/are used in the development of this project.
 
 ## Project setup
 ```
