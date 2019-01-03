@@ -1,19 +1,19 @@
 <template>
     <aside class="menu app-sidebar animated" :class="{ slideInLeft: show, slideOutLeft: !show }">
         <section class="hero is-light">
-          <div class="hero-body">
+          <div class="hero-body" style="padding: 2rem 1rem;">
             <article class="media" style="display:flex; align-items: center;">
+              <div class="media-content">
               <figure class="media-left" role="button">
-                <p class="image is-48x48">
+                <p class="image is-64x64">
                   <img class="is-rounded" src="https://images.unsplash.com/photo-1544570768-c01eb520ee37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80">
                 </p>
               </figure>
-              <div class="media-content">
                 <div class="content">
                   <router-link :to="{name: 'profile'}" :exact="true">
-                    <strong class="has-text-link" @click="toggle">Jane Doe</strong>
+                    <strong class="has-text-link" @click="toggle">Mary Jane Doe</strong>
                   </router-link>
-                  <div class="help">janedoe@example.com</div>
+                  <div class="help">maryjanedoe@example.com</div>
                 </div>
               </div>
             </article>
@@ -63,7 +63,7 @@ export default {
     ]),
 
     logout() {
-
+      window.location.replace('#/login');
     },
     toggle() {
       if (this.device.isMobile) {
