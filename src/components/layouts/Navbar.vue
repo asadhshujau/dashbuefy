@@ -1,13 +1,16 @@
 <template>
-    <nav class="navbar is-link is-fixed-top">
-        <div class="navbar-start">
-            <a class="navbar-item is-hidden-tablet" @click="toggleSidebar({opened: !sidebar.opened})">
-                <i class="mdi mdi-light mdi-view-headline" aria-hidden="true" v-show="!sidebar.hidden"></i>
+    <nav class="navbar is-link is-fixed-top" role="navigation" aria-label="main navigation">
+         <div class="navbar-brand is-pulled-left">
+            <a role="button" class="navbar-burger burger is-hidden-tablet" @click="toggleSidebar({opened: !sidebar.opened})" aria-label="menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
             </a>
         </div>
-        <div class="navbar-end">
-            <router-link class="navbar-item" to="/login">Login</router-link>
-            <a class="navbar-item" @click="logout">Logout</a>
+        <div class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" @click="logout">Logout</a>
+            </div>
         </div>
     </nav>
 </template>
