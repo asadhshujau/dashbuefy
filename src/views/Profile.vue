@@ -1,5 +1,7 @@
 <template>
-    <div>Profile</div>
+    <section>
+        Profile
+    </section>
 </template>
 <script>
 export default {

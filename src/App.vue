@@ -1,11 +1,18 @@
 <template>
   <div id="app">
       <!-- <n-progress-container></n-progress-container> -->
-      <navbar :show="true"></navbar>
-      <sidebar :show="sidebar.opened && !sidebar.hidden"></sidebar>
-      <app-main></app-main>
-      <div class="sidebar-mobile-overlay" @click="toggleSidebar({opened: !sidebar.opened})"
-          v-if="showOverlay">
+      <div v-if="$router.currentRoute.name == 'login'">
+            <transition mode="out-in" enter-active-class="fadeIn" enter-leave-class="fadeOut" appear>
+                <router-view class="animated"></router-view>
+            </transition>
+      </div>
+      <div v-else>
+        <navbar :show="true"></navbar>
+        <sidebar :show="sidebar.opened && !sidebar.hidden"></sidebar>
+        <app-main></app-main>
+        <div class="sidebar-mobile-overlay" @click="toggleSidebar({opened: !sidebar.opened})"
+            v-if="showOverlay">
+        </div>
       </div>
 </div>
 </template>
@@ -20,7 +27,6 @@ export default {
     Sidebar,
     AppMain
   },
-
   beforeMount() {
     const { body } = document;
     const WIDTH = 768;

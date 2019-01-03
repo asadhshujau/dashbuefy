@@ -3,11 +3,12 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import About from './views/About.vue';
 import Profile from './views/Profile.vue';
+import Login from './views/Login.vue';
 
 Vue.use(Router);
 
 export default new Router({
-  mode: 'history',
+  mode: 'hash',
   linkActiveClass: 'is-active',
   base: process.env.BASE_URL,
   routes: [
@@ -17,7 +18,7 @@ export default new Router({
       component: Home
     },
     {
-      path: 'about',
+      path: '/about',
       name: 'about',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
@@ -25,9 +26,14 @@ export default new Router({
       component: About
     },
     {
-      path: 'profile',
+      path: '/profile',
       name: 'profile',
       component: Profile
+    },
+    {
+      path: '/login',
+      name: 'login',
+      component: Login
     }
   ]
 });

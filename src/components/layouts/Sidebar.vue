@@ -32,9 +32,15 @@
                     About
                 </router-link>
             </li>
+            <li @click="toggle">
+                <router-link :to="{name: 'login'}" :exact="true"  target="_blank" class="is-radiusless">
+                    <span class="icon"><i class="mdi mdi-login"></i></span>
+                    Login
+                </router-link>
+            </li>
             <li class="is-hidden-desktop">
                 <a @click="logout">
-                    <span class="icon"><i class="mdi mdi-logout"></i></span>
+                    <span class="icon"><i class="mdi mdi-power"></i></span>
                     Logout
                 </a>
             </li>
