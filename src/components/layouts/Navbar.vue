@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar is-link is-fixed-top" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-primary is-fixed-top" role="navigation" aria-label="main navigation">
          <div class="navbar-brand is-pulled-left">
             <a role="button" class="navbar-burger burger is-hidden-tablet" @click="toggleSidebar({opened: !sidebar.opened})" aria-label="menu" aria-expanded="false">
                 <span aria-hidden="true"></span>
