@@ -6,14 +6,14 @@
               <div class="media-content">
               <figure class="media-left" role="button">
                 <p class="image is-64x64">
-                  <img class="is-rounded" src="https://images.unsplash.com/photo-1544570768-c01eb520ee37?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80">
+                  <img class="is-rounded" src="https://images.unsplash.com/photo-1470611736165-18737bb3afce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80">
                 </p>
               </figure>
                 <div class="content">
                   <router-link :to="{name: 'profile'}" :exact="true">
-                    <strong class="has-text-link" @click="toggle">Mary Jane Doe</strong>
+                    <strong class="has-text-link" @click="toggle">John Doe</strong>
                   </router-link>
-                  <div class="help">maryjanedoe@example.com</div>
+                  <div class="help">johndoe@example.com</div>
                 </div>
               </div>
             </article>

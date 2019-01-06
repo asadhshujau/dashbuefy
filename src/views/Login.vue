@@ -24,7 +24,7 @@
                                 </b-field>
                             </div>
                             <div class="content">
-                                <button class="button is-medium is-outlined is-primary" @click="login">Login</button>
+                                <button class="button is-medium is-primary" @click="login">Login</button>
                             </div>
                         </div>
                     </div>
